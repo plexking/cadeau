@@ -1,0 +1,9 @@
+Add your own song file here, named exactly:
+
+    song.mp3
+
+The site expects: assets/audio/song.mp3
+(configurable in data/config.js -> siteConfig.song.src)
+
+Until a real file is added, the play button will show:
+"Add your song at assets/audio/song.mp3 to enable playback."

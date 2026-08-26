@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <title>Do you love me? 💕</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Parisienne&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/theme.css" />
+  </head>
+  
+  <body>
+
+    <div id="app" class="app">
+
+      <!-- Floating hearts layer, persists across screens -->
+      <div id="floating-hearts" class="floating-hearts" aria-hidden="true"></div>
+
+      <!-- Screen 1: love question -->
+      <section id="screen-question" class="screen screen--active" data-screen="question">
+        <div class="stage">
+          <div class="doodles" aria-hidden="true">
+            <span class="doodle doodle--1">✦</span>
+            <span class="doodle doodle--2">♡</span>
+            <span class="doodle doodle--3">✧</span>
+          </div>
+
+          <div class="character" aria-hidden="true">
+            <!-- character illustration set via CSS (assets/animation.gif) -->
+          </div>
+
+          <h1 id="question-heading" class="heading heading--main">Do you love me? ❤️</h1>
+
+          <div class="button-row">
+            <button id="btn-yes" type="button" class="btn btn--yes">YES</button>
+            <button id="btn-no" type="button" class="btn btn--no">NO</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 2: celebration -->
+      <section id="screen-celebration" class="screen" data-screen="celebration">
+        <div class="stage">
+          <h1 class="heading heading--main">I knew you'd say yes 💕</h1>
+          <div class="character character--hug" aria-hidden="true"></div>
+          <button type="button" class="btn btn--continue" data-next="gifts">Continue</button>
+        </div>
+      </section>
+
+      <!-- Screen 3: gift selection -->
+      <section id="screen-gifts" class="screen" data-screen="gifts">
+        <div class="stage">
+          <h1 class="heading heading--main">I knew you'd say yes 💕</h1>
+          <div class="character character--hug character--small" aria-hidden="true"></div>
+          <div id="gift-row" class="gift-row"></div>
+        </div>
+      </section>
+
+      <!-- Screen 4: gift 1, memories -->
+      <section id="screen-gift1" class="screen" data-screen="gift1">
+        <div class="stage stage--memories">
+          <div id="memories-grid" class="memories-grid"></div>
+          <h2 id="gift1-title" class="heading heading--script">A few of our favorite moments</h2>
+          <button type="button" class="btn btn--back" data-next="gifts">BACK</button>
+        </div>
+      </section>
+
+      <!-- Screen 5: gift 2, video -->
+      <section id="screen-music" class="screen" data-screen="music">
+        <div class="stage">
+          <h1 id="video-title" class="heading heading--main">A song that reminds me of us</h1>
+
+          <div class="music-row">
+            <div class="vinyl" aria-hidden="true">
+              <div class="vinyl__disc">
+                <div class="vinyl__label"></div>
+              </div>
+            </div>
+
+            <div class="video-card">
+              <div class="video-card__frame">
+                <iframe
+                  id="video-frame"
+                  src=""
+                  title="A song that reminds me of us"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  loading="lazy">
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+          <a id="video-fallback-link" class="video-fallback-link" href="#" target="_blank" rel="noopener">
+            Trouble loading? Watch on YouTube ↗
+          </a>
+
+          <button type="button" class="btn btn--back" data-next="gifts">BACK</button>
+        </div>
+      </section>
+
+      <!-- Screen 6: gift 3, letter -->
+      <section id="screen-letter" class="screen" data-screen="letter">
+        <div class="stage stage--letter">
+          <div class="kiss-marks" aria-hidden="true">
+            <span class="kiss kiss--1"></span>
+            <span class="kiss kiss--2"></span>
+            <span class="kiss kiss--3"></span>
+            <span class="kiss kiss--4"></span>
+            <span class="kiss kiss--5"></span>
+            <span class="kiss kiss--6"></span>
+          </div>
+
+          <div class="letter-card">
+            <div class="letter-card__greeting" id="letter-greeting">Dear Love</div>
+            <div class="letter-card__body" id="letter-body"></div>
+            <div class="letter-card__signature" id="letter-signature">Forever yours</div>
+          </div>
+
+          <button type="button" class="btn btn--back" data-next="gifts">BACK</button>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Lightbox: full-size photo view -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button type="button" id="lightbox-close" class="lightbox__close" aria-label="Close">&times;</button>
+      <img id="lightbox-img" class="lightbox__img" src="" alt="" />
+    </div>
+
+    <script src="data/config.js"></script>
+    <script src="data/memories.js"></script>
+    <script src="data/letter.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
