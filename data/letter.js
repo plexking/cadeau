@@ -1,11 +1,11 @@
 // Letter content: edit freely, this is the only place the final-letter text lives.
 const letterContent = {
-  greeting: "Dear Love",
+  greeting: "Ma chère FARIDA 💌✨",
   paragraphs: [
-    "Today is all about you, and I just want you to know how grateful I am to have you in my life.",
-    "Every little moment we've shared has found its way into my favorite memories, the ordinary days especially.",
-    "Thank you for the comfort, the laughter, and for making everything feel a little lighter.",
-    "I can't wait for all the moments we still get to share together."
+    "Aujourd'hui, je voulais juste prendre un moment pour te dire à quel point tu comptes pour moi 🌸.",
+    "Depuis que tu es dans ma vie, le quotidien est tellement plus doux et rempli de rires ☀️💖",
+    "Merci d'être cette personne si spéciale et lumineuse 🌟.",
+    "Tu me rends tout simplement heureux(se) 🧸💗"
   ],
-  signature: "Forever yours"
+  signature: "Pour toujours à toi 💖🔒"
 };
