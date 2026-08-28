@@ -1,12 +1,6 @@
 // Site config: edit this file to personalize the whole site.
 const siteConfig = {
   question: "Do you love me? ❤️",
-  noEscalationHeadings: [
-    "Est-ce que tu m'aimes ? 🥺👉👈💖",   // noClicks = 0 (not shown, kept for reference)
-    "Attends... tu es vraiment sûr(e) ? 🥺💔",   // noClicks = 1
-    "Euh non, mauvaise réponse... 😜✨",             // noClicks = 2
-    "Petit bug, on réessaie ! 🎯🔄"              // noClicks >= 3
-  ],
   yesMessage: "Je savais tellement que tu dirais OUI ! 🥰🎉✨",
 
   // Gift 1: the memories scrapbook
