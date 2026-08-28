@@ -11,7 +11,7 @@ const siteConfig = {
   video: {
     // Paste just the ID from the YouTube URL, e.g. for
     // https://www.youtube.com/watch?v=dQw4w9WgXcQ the id is "dQw4w9WgXcQ"
-    youtubeId: "dQw4w9WgXcQ" // <- replace with your own video ID
+    youtubeId: "tVKaN_H35xs" // <- replace with your own video ID
   },
 
   gifts: [
