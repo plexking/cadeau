@@ -5,7 +5,7 @@ const letterContent = {
     "Aujourd'hui, je voulais juste prendre un moment pour te dire à quel point tu comptes pour moi 🌸.",
     "Depuis que tu es dans ma vie, le quotidien est tellement plus doux et rempli de rires ☀️💖",
     "Merci d'être cette personne si spéciale et lumineuse 🌟.",
-    "Tu me rends tout simplement heureux(se) 🧸💗"
+    "Tu me rends tout simplement heureuse 🧸💗"
   ],
   signature: "Pour toujours à toi 💖🔒"
 };
