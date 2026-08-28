@@ -56,10 +56,10 @@
 
   const escalation = [
     { heading: siteConfig.question, yesScale: 1, noScale: 1 },
-    { heading: "nah that's not right...", yesScale: 1.25, noScale: 0.75 },
-    { heading: "be serious...", yesScale: 1.7, noScale: 0.5 },
-    { heading: "be serious...", yesScale: 2.2, noScale: 0.3 },
-    { heading: "be serious...", yesScale: 2.9, noScale: 0, vanish: true }
+    { heading: "Attends... tu es vraiment sûr(e) ? 🥺💔", yesScale: 1.25, noScale: 0.75 },
+    { heading: "Euh non, mauvaise réponse... 😜✨", yesScale: 1.7, noScale: 0.5 },
+    { heading: "Petit bug, on réessaie ! 🎯🔄", yesScale: 2.2, noScale: 0.3 },
+    { heading: "Petit bug, on réessaie ! 🎯🔄", yesScale: 2.9, noScale: 0, vanish: true }
   ];
 
   function applyEscalation() {
